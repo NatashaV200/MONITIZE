@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monetize</title>
+    <link rel="stylesheet" href="styles.css">
+     <!--link to font awsome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <!--link to boxicons-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <nav class="navbar section-content">
+            <!--logo pic-->
+     <a href="#"  class="nav-logo">
+       <div class="logo">
+                    <i class="fa-solid fa-dollar-sign"></i>
+       </div>
+       <span>Monitize</span>
+     </a>
+
+       <ul class="nav-menu" >
+             <button id="menu-close-button" class="fas fa-times"></button>
+        
+            
+            <li class="nav-item">
+                <a href="#home" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="#about" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+                <a href="#dashboard" class="nav-link">Dashboard</a>
+            </li>
+            <li class="nav-item">
+                <a href="#expense-manager" class="nav-link">Expense Manager</a>
+            </li>
+            <li class="nav-item">
+                 <a href="#bank-sync" class="nav-link">Bank Sync</a>
+            </li>
+             <li class="nav-item" id="nav-btn">
+                 <a href="#log-in" class="nav-link" id="#button">Log In</a>
+            </li>
+             <li class="nav-item" id="nav-btn">
+                 <a href="#sign-up" class="nav-link" id="#button" >Sign Up</a>
+            </li>
+            
+        </ul>
+        <button id="menu-open-button" class="fas fa-bars"></button>
+        
+         </nav>
+
+    </header>
+
+        <main>
+        <!--hero section -->
+        <section class="hero-section page-section home-section" id="home">
+            <div class="section-content">
+                <div class="hero-details">
+                   <div class="badge-top">
+                      📈 Smart Personal Finance Tracker
+                   </div>
+                    <h1 class="subtitle"> Take Control of <br>
+                        <span>Your Money</span></h1> 
+                   <p>  Track income, manage expenses, and visualize your financial health —
+                          all in <br> one clean, intuitive dashboard. Your data stays private,
+                          right in your <br> browser.
+                   </p>
+                      <div class="buttons">
+                            <button class="primary-btn">Get Started Free →</button>
+                            <button class="secondary-btn">Sign In</button>
+                      </div>
+
+
+                     <div class="features">
+                             <div class="feature">🔒 Data stays in your browser</div>
+                             <div class="feature">📊 Visual charts & insights</div>
+                             <div class="feature">⚡ Real-time balance tracking</div>
+                     </div>
+                    
+                </div>
+            </div>
+        </section>
+        <section class="dashboard-section page-section" id="dashboard">
+            <div class="section-content dashboard-content">
+                <h2>Welcome back, <span class="guest-name">Guest</span></h2>
+                <p>Here's your financial overview for today.</p>
+
+                <div class="metrics-grid">
+                    <div class="metric-card">
+                        <div>
+                            <h4>Net Worth</h4>
+                            <div class="metric-value">KSh 1,245,000</div>
+                        </div>
+                        <div class="metric-icon"><i class="fa-solid fa-wallet"></i></div>
+                    </div>
+                    <div class="metric-card">
+                        <div>
+                            <h4>Monthly Spend</h4>
+                            <div class="metric-value">KSh 45,200</div>
+                        </div>
+                        <div class="metric-icon"><i class="fa-solid fa-chart-column"></i></div>
+                    </div>
+                    <div class="metric-card">
+                        <div>
+                            <h4>Budget Used</h4>
+                            <div class="metric-value">62%</div>
+                        </div>
+                        <div class="metric-icon"><i class="fa-solid fa-pie-chart"></i></div>
+                    </div>
+                    <div class="metric-card">
+                        <div>
+                            <h4>Saving Rate</h4>
+                            <div class="metric-value">18%</div>
+                        </div>
+                        <div class="metric-icon"><i class="fa-solid fa-coins"></i></div>
+                    </div>
+                </div>
+
+                <div class="cashflow-card">
+                    <div class="card-header">
+                        <h3>Cashflow</h3>
+                    </div>
+                    <div class="cashflow-chart">
+                        <svg viewBox="0 0 700 340" preserveAspectRatio="xMidYMid meet">
+                            <!-- axes -->
+                            <line x1="60" y1="20" x2="60" y2="260" stroke="#cbd5e1" stroke-width="1" />
+                            <line x1="60" y1="260" x2="640" y2="260" stroke="#cbd5e1" stroke-width="1" />
+
+                            <!-- y-axis labels and ticks -->
+                            <text x="40" y="260" font-size="12" fill="#64748b" text-anchor="end">0</text>
+                            <line x1="55" y1="220" x2="60" y2="220" stroke="#e2e8f0" />
+                            <text x="40" y="224" font-size="12" fill="#64748b" text-anchor="end">25k</text>
+                            <line x1="55" y1="180" x2="60" y2="180" stroke="#e2e8f0" />
+                            <text x="40" y="184" font-size="12" fill="#64748b" text-anchor="end">50k</text>
+                            <line x1="55" y1="140" x2="60" y2="140" stroke="#e2e8f0" />
+                            <text x="40" y="144" font-size="12" fill="#64748b" text-anchor="end">75k</text>
+                            <line x1="55" y1="100" x2="60" y2="100" stroke="#e2e8f0" />
+                            <text x="40" y="104" font-size="12" fill="#64748b" text-anchor="end">100k</text>
+
+                            <!-- income bars (blue) -->
+                            <rect x="100" y="120" width="60" height="140" fill="#4a6daf"></rect>
+                            <rect x="220" y="80" width="60" height="180" fill="#4a6daf"></rect>
+                            <rect x="340" y="160" width="60" height="100" fill="#4a6daf"></rect>
+                            <rect x="460" y="110" width="60" height="150" fill="#4a6daf"></rect>
+
+                            <!-- expense bars (green), slightly offset -->
+                            <rect x="140" y="150" width="60" height="110" fill="#22c55e" opacity="0.95"></rect>
+                            <rect x="260" y="130" width="60" height="130" fill="#22c55e" opacity="0.95"></rect>
+                            <rect x="380" y="180" width="60" height="80" fill="#22c55e" opacity="0.95"></rect>
+                            <rect x="500" y="140" width="60" height="120" fill="#22c55e" opacity="0.95"></rect>
+
+                            <!-- x-axis month labels -->
+                            <text x="130" y="285" font-size="12" fill="#64748b" text-anchor="middle">Jan</text>
+                            <text x="250" y="285" font-size="12" fill="#64748b" text-anchor="middle">Feb</text>
+                            <text x="370" y="285" font-size="12" fill="#64748b" text-anchor="middle">Mar</text>
+                            <text x="490" y="285" font-size="12" fill="#64748b" text-anchor="middle">Apr</text>
+
+                            <!-- legend -->
+                            <rect x="520" y="20" width="12" height="12" fill="#4a6daf"></rect>
+                            <text x="540" y="31" font-size="12" fill="#64748b">Income</text>
+                            <rect x="520" y="42" width="12" height="12" fill="#22c55e"></rect>
+                            <text x="540" y="53" font-size="12" fill="#64748b">Expenses</text>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="recent-transactions">
+                    <div class="transactions-header">
+                        <h3>Recent Transactions</h3>
+                        <a href="#" class="view-all">View All →</a>
+                    </div>
+                    <div class="transactions-list">
+                        <div class="transaction-card">
+                            <div class="transaction-left">
+                                <i class="fa-solid fa-shopping-bag"></i>
+                                <div class="transaction-info">
+                                    <h4>Grocery Store</h4>
+                                    <p>Food & Dining • UPI</p>
+                                </div>
+                            </div>
+                            <div class="transaction-amount">-KSh 245</div>
+                        </div>
+                        <div class="transaction-card">
+                            <div class="transaction-left">
+                                <i class="fa-solid fa-car"></i>
+                                <div class="transaction-info">
+                                    <h4>Uber Ride</h4>
+                                    <p>Transportation • Credit Card</p>
+                                </div>
+                            </div>
+                            <div class="transaction-amount">-KSh 35</div>
+                        </div>
+                        <div class="transaction-card">
+                            <div class="transaction-left">
+                                <i class="fa-solid fa-tv"></i>
+                                <div class="transaction-info">
+                                    <h4>Netflix Subscription</h4>
+                                    <p>Entertainment • Debit Card</p>
+                                </div>
+                            </div>
+                            <div class="transaction-amount">-KSh 65</div>
+                        </div>
+                        <div class="transaction-card">
+                            <div class="transaction-left">
+                                <i class="fa-solid fa-bolt"></i>
+                                <div class="transaction-info">
+                                    <h4>Electricity Bill</h4>
+                                    <p>Bills & Utilities • Net Banking</p>
+                                </div>
+                            </div>
+                            <div class="transaction-amount">-KSh 185</div>
+                        </div>
+                        <div class="transaction-card">
+                            <div class="transaction-left">
+                                <i class="fa-solid fa-utensils"></i>
+                                <div class="transaction-info">
+                                    <h4>Restaurant Dinner</h4>
+                                    <p>Food & Dining • UPI</p>
+                                </div>
+                            </div>
+                            <div class="transaction-amount">-KSh 120</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="budget-panel">
+                    <div class="budget-header">
+                        <h3>Budget</h3>
+                    </div>
+                    
+                    <div class="budget-overall">
+                        <div class="budget-label">
+                            <span>Overall</span>
+                            <span class="budget-percentage">22%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 22%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="categories-watch">
+                        <h4>Categories to Watch</h4>
+                        <div class="categories-list">
+                            <div class="category-item">
+                                <span class="category-dot" style="background-color: #ef4444;"></span>
+                                <span class="category-name">Shopping</span>
+                                <span class="category-percentage">50%</span>
+                            </div>
+                            <div class="category-item">
+                                <span class="category-dot" style="background-color: #f97316;"></span>
+                                <span class="category-name">Health & Fitness</span>
+                                <span class="category-percentage">50%</span>
+                            </div>
+                            <div class="category-item">
+                                <span class="category-dot" style="background-color: #22c55e;"></span>
+                                <span class="category-name">Food & Dining</span>
+                                <span class="category-percentage">46%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="upcoming-bills-card">
+                    <div class="bills-header">
+                        <h3>Upcoming Bills</h3>
+                    </div>
+                    <div class="bills-list">
+                        <div class="bill-item">
+                            <div class="bill-info">
+                                <h5>Rent</h5>
+                                <p class="bill-due">Due Oct 1</p>
+                            </div>
+                            <div class="bill-amount">KSh 1,500</div>
+                        </div>
+                        <div class="bill-item">
+                            <div class="bill-info">
+                                <h5>Internet</h5>
+                                <p class="bill-due">Due Oct 5</p>
+                            </div>
+                            <div class="bill-amount">KSh 100</div>
+                        </div>
+                        <div class="bill-item">
+                            <div class="bill-info">
+                                <h5>Insurance</h5>
+                                <p class="bill-due">Due Oct 10</p>
+                            </div>
+                            <div class="bill-amount">KSh 250</div>
+                        </div>
+                        <div class="bill-item">
+                            <div class="bill-info">
+                                <h5>Phone Bill</h5>
+                                <p class="bill-due">Due Oct 12</p>
+                            </div>
+                            <div class="bill-amount">KSh 600</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="smart-tips-card">
+                    <div class="tips-header">
+                        <i class="fa-solid fa-lightbulb"></i>
+                        <h3>Smart Tips</h3>
+                    </div>
+                    <div class="tips-list">
+                        <div class="tip-item">
+                            You spent 40% more on dining this month. Try meal prepping to save KSh 300!
+                        </div>
+                        <div class="tip-item">
+                            Set up auto-debit for bills to avoid late fees.
+                        </div>
+                        <div class="tip-item">
+                            Your savings rate of 91% is above average. Keep it up!
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="tools-section page-section home-section" id="home-tools">
+            <div class="section-content">
+                <h2 class="tools-title">Everything You Need</h2>
+                <p class="tools-subtitle">Powerful tools to take control of your financial life.</p>
+
+                <div class="tools-grid">
+                    <div class="tool-card">
+                        <i class="fa-solid fa-receipt"></i>
+                        <h3>Smart Expense Tracking</h3>
+                        <p>Automatically categorize and track every transaction across all your accounts in real-time.</p>
+                    </div>
+                    <div class="tool-card">
+                        <i class="fa-solid fa-lock"></i>
+                        <h3>Secure Bank Synchronization</h3>
+                        <p>Connect all your bank accounts securely with industry-leading encryption and security protocols.</p>
+                    </div>
+                    <div class="tool-card">
+                        <i class="fa-solid fa-chart-bar"></i>
+                        <h3>Intelligent Budgeting</h3>
+                        <p>Set category-wise budgets and get real-time alerts when you're approaching your limits.</p>
+                    </div>
+                    <div class="tool-card">
+                        <i class="fa-solid fa-lightbulb"></i>
+                        <h3>Actionable Insights</h3>
+                        <p>Visualize spending patterns and get personalized recommendations to save more and invest wisely.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="how-section page-section home-section" id="how-it-works">
+            <div class="section-content">
+                <h2 class="how-title">How It Works</h2>
+                <p class="how-subtitle">Get started in just 3 simple steps.</p>
+
+                <div class="how-grid">
+                    <div class="how-card">
+                        <div class="how-number">1</div>
+                        <h3>Create Account</h3>
+                        <p>Sign up in under 2 minutes</p>
+                    </div>
+                    <div class="how-card">
+                        <div class="how-number">2</div>
+                        <h3>Connect Banks</h3>
+                        <p>Link your accounts securely</p>
+                    </div>
+                    <div class="how-card">
+                        <div class="how-number">3</div>
+                        <h3>Start Tracking</h3>
+                        <p>See your finances visualized automatically</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="reviews-section page-section home-section" id="reviews">
+            <div class="section-content">
+                <h2 class="reviews-title">Reviews</h2>
+
+                <div class="reviews-grid">
+                    <div class="review-card">
+                        <div class="review-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p>"Monetize has completely transformed how I manage my business and personal finances. The bank sync feature is incredible!"</p>
+                        <div class="review-user">
+                            <div class="review-avatar">P</div>
+                            <div>
+                                <h4>Priya Sharma</h4>
+                                <span>Small Business Owner</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p>"Finally a finance app that understands all African banks and mobile money. I've saved KSh 1,500 more per month since using Monetize."</p>
+                        <div class="review-user">
+                            <div class="review-avatar">R</div>
+                            <div>
+                                <h4>Rahul Verma</h4>
+                                <span>Software Engineer</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <p>"The expense tracking is so intuitive. I love how it categorizes everything automatically. Highly recommended!"</p>
+                        <div class="review-user">
+                            <div class="review-avatar">A</div>
+                            <div>
+                                <h4>Anita Desai</h4>
+                                <span>Freelancer</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about-section page-section" id="about">
+            <div class="section-content">
+                <h2 class="about-title">Our Mission: <span>Financial Clarity</span> for Everyone</h2>
+                <p class="about-subtitle">We believe everyone deserves to understand and control their finances. Monetize was built to make financial management simple, intuitive, and even beautiful.</p>
+
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <i class="fa-solid fa-users"></i>
+                        <h3>50,000+</h3>
+                        <p>Active Users</p>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fa-solid fa-coins"></i>
+                        <h3>$100M+</h3>
+                        <p>Transactions Tracked</p>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fa-solid fa-building-columns"></i>
+                        <h3>15+</h3>
+                        <p>Bank Partners</p>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fa-solid fa-star"></i>
+                        <h3>4.8/5</h3>
+                        <p>User Rating</p>
+                    </div>
+                </div>
+
+                <h2 class="about-title spaced">Our Core Values</h2>
+                <div class="values-grid">
+                    <div class="value-card">
+                        <i class="fa-solid fa-eye"></i>
+                        <h3>Transparency</h3>
+                        <p>We believe in complete transparency in everything we do.</p>
+                    </div>
+                    <div class="value-card">
+                        <i class="fa-solid fa-shield-halved"></i>
+                        <h3>Security First</h3>
+                        <p>Your data is protected with bank-grade 256-bit encryption.</p>
+                    </div>
+                    <div class="value-card">
+                        <i class="fa-solid fa-user-shield"></i>
+                        <h3>User Privacy</h3>
+                        <p>We never sell or share your personal financial data.</p>
+                    </div>
+                    <div class="value-card">
+                        <i class="fa-solid fa-rocket"></i>
+                        <h3>Continuous Innovation</h3>
+                        <p>We constantly improve our platform based on user feedback.</p>
+                    </div>
+                </div>
+
+                <h2 class="about-title spaced">Why Choose Monetize?</h2>
+                <div class="choose-grid">
+                    <div class="choose-item"><i class="fa-solid fa-circle-check"></i><span>Supports all major Indian banks and UPI payment methods</span></div>
+                    <div class="choose-item"><i class="fa-solid fa-circle-check"></i><span>RBI-compliant data handling and privacy standards</span></div>
+                    <div class="choose-item"><i class="fa-solid fa-circle-check"></i><span>Free tier with no hidden charges or premium lock-ins</span></div>
+                    <div class="choose-item"><i class="fa-solid fa-circle-check"></i><span>Intelligent categorization powered by smart algorithms</span></div>
+                    <div class="choose-item"><i class="fa-solid fa-circle-check"></i><span>Real-time notifications and budget alerts</span></div>
+                    <div class="choose-item"><i class="fa-solid fa-circle-check"></i><span>Export your data anytime — you own it, not us</span></div>
+                </div>
+            </div>
+        </section>
+        <!--login section -->
+        <section class="login-section page-section" id="log-in">
+            <div class="section-content">
+                <div class="login-details">
+                    <h2>Welcome Back</h2>
+                    <p>Login to your Monetize account</p>
+
+                    <form class="login-form">
+                        <label for="login-email">Email</label>
+                        <div class="input-with-icon">
+                            <i class="fa-solid fa-envelope"></i>
+                            <input type="email" id="login-email" name="login-email" placeholder="Enter your email" required>
+                        </div>
+
+                        <label for="login-password">Password</label>
+                        <div class="input-with-icon">
+                            <i class="fa-solid fa-lock"></i>
+                            <input type="password" id="login-password" name="login-password" placeholder="Enter your password" required>
+                        </div>
+
+                        <div class="login-row">
+                            <label class="checkbox-row">
+                                <input type="checkbox" name="remember">
+                                <span>Remember me</span>
+                            </label>
+                            <a class="forgot-link" href="#">Forgot password?</a>
+                        </div>
+
+                        <button type="submit" class="primary-btn login-btn">Login</button>
+
+                        <div class="divider"><span>or</span></div>
+
+                        <div class="social-buttons">
+                            <button type="button" class="social-btn google-btn"><i class="fa-brands fa-google"></i>Continue with Google</button>
+                            <button type="button" class="social-btn facebook-btn"><i class="fa-brands fa-facebook-f"></i>Continue with Facebook</button>
+                        </div>
+
+                        <p class="login-text">Don’t have an account? <a href="#sign-up">Sign up</a></p>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!--sign up section -->
+        <section class="signup-section page-section" id="sign-up">
+            <div class="section-content">
+                <div class="signup-details">
+                    <h2>Create Your Account</h2>
+                    <p>Start managing your finances today</p>
+
+                    <form class="signup-form">
+                        <label for="full-name">Full Name</label>
+                        <div class="input-with-icon">
+                            <i class="fa-solid fa-user"></i>
+                            <input type="text" id="full-name" name="full-name" placeholder="Enter your full name" required>
+                        </div>
+
+                        <label for="email">Email address</label>
+                        <div class="input-with-icon">
+                            <i class="fa-solid fa-envelope"></i>
+                            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                        </div>
+
+                        <label for="password">Password</label>
+                        <div class="input-with-icon">
+                            <i class="fa-solid fa-lock"></i>
+                            <input type="password" id="password" name="password" placeholder="Create a password" required>
+                        </div>
+
+                        <label for="confirm-password">Confirm Password</label>
+                        <div class="input-with-icon">
+                            <i class="fa-solid fa-lock"></i>
+                            <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password" required>
+                        </div>
+
+                        <label for="phone">Phone (optional)</label>
+                        <div class="input-with-icon">
+                            <i class="fa-solid fa-phone"></i>
+                            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+                        </div>
+
+                        <label class="checkbox-row">
+                            <input type="checkbox" name="terms" required>
+                            <span>I agree to the Terms &amp; Conditions and Privacy Policy</span>
+                        </label>
+
+                        <button type="submit" class="primary-btn">Sign Up</button>
+
+                        <p class="login-text">Already have an account? <a href="#log-in">Login</a></p>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <footer class="site-footer">
+            <div class="section-content footer-grid">
+                <div class="footer-col">
+                    <div class="footer-brand">
+                        <div class="logo">
+                            <i class="fa-solid fa-dollar-sign"></i>
+                        </div>
+                        <span>Monetize</span>
+                    </div>
+                    <p>Your complete personal finance companion. Track, analyze, and optimize your financial life.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#expense-manager">Expense Manager</a></li>
+                        <li><a href="#dashboard">Dashboard</a></li>
+                        <li><a href="#bank-sync">Bank Sync</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Guides &amp; Tutorials</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Community Forum</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li><i class="fa-solid fa-envelope"></i> support@monetize.co.ke</li>
+                        <li><i class="fa-solid fa-phone"></i> +254 712 345 678</li>
+                        <li><i class="fa-solid fa-location-dot"></i> Nairobi, Kenya</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="section-content footer-bottom">
+                <div class="footer-bottom-left">
+                    <p>© 2024 Monetize Financial Technologies Pvt. Ltd. All rights reserved.</p>
+                    <p>Made with ❤️ in kenya</p>
+                </div>
+                <div class="footer-bottom-right">
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </footer>
+        <script src="scrip.js"></script>
+    
+</body>
+</html>
