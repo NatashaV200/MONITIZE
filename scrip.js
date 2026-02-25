@@ -33,6 +33,24 @@ window.addEventListener("load", () => {
         closeModal(loginSection);
       }
     });
+
+    const loginCloseBtn = loginSection.querySelector(".form-close-btn");
+    if (loginCloseBtn) {
+      loginCloseBtn.addEventListener("click", (e) => {
+        e.preventDefault();
+        closeModal(loginSection);
+      });
+    }
+  }
+
+  if (signupSection) {
+    const signupCloseBtn = signupSection.querySelector(".form-close-btn");
+    if (signupCloseBtn) {
+      signupCloseBtn.addEventListener("click", (e) => {
+        e.preventDefault();
+        closeModal(signupSection);
+      });
+    }
   }
 
   // Hide all page sections and show only home on load
@@ -45,7 +63,7 @@ window.addEventListener("load", () => {
   const showSection = (sectionId) => {
     hideAllSections();
     
-    // Special handling for home - show all home-section elements
+    // show all home-section elements
     if (sectionId === "home") {
       document.querySelectorAll(".home-section").forEach(section => {
         section.classList.add("active");
@@ -68,6 +86,8 @@ window.addEventListener("load", () => {
   const aboutLink = document.querySelector('a[href="#about"]');
   const dashboardLink = document.querySelector('a[href="#dashboard"]');
   const homeLink = document.querySelector('a[href="#home"]');
+  const bankSyncLinks = document.querySelectorAll('a[href="#bank-sync"]');
+  const expenseManagerLink = document.querySelector('a[href="#expense-manager"]');
   const getStartedButton = document.querySelector(".hero-section .primary-btn");
   const signInButton = document.querySelector(".hero-section .secondary-btn");
 
@@ -106,6 +126,22 @@ window.addEventListener("load", () => {
     });
   }
 
+  if (bankSyncLinks) {
+    bankSyncLinks.forEach(link => {
+      link.addEventListener("click", (event) => {
+        event.preventDefault();
+        showSection("bank-sync");
+      });
+    });
+  }
+
+  if (expenseManagerLink) {
+    expenseManagerLink.addEventListener("click", (event) => {
+      event.preventDefault();
+      showSection("expense-manager");
+    });
+  }
+
   if (getStartedButton) {
     getStartedButton.addEventListener("click", (event) => {
       event.preventDefault();
@@ -117,6 +153,19 @@ window.addEventListener("load", () => {
     signInButton.addEventListener("click", (event) => {
       event.preventDefault();
       loginSection.classList.add("active");
+    });
+  }
+
+  // Quick Actions handlers
+  const actionCards = document.querySelectorAll(".action-card");
+  if (actionCards) {
+    actionCards.forEach((card, index) => {
+      card.addEventListener("click", () => {
+        // 0: Add Expense, 1: Bank Sync, 2: View Reports, 3: Settings
+        if (index === 1) {
+          showSection("bank-sync");
+        }
+      });
     });
   }
 
