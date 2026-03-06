@@ -13,45 +13,41 @@
 <body>
     <header>
         <nav class="navbar section-content">
-            <!--logo pic-->
-     <a href="#"  class="nav-logo">
-       <div class="logo">
+            <a href="#" class="nav-logo">
+                <div class="logo">
                     <i class="fa-solid fa-dollar-sign"></i>
-       </div>
-       <span>Monitize</span>
-     </a>
+                </div>
+                <span>Monetize</span>
+            </a>
 
-       <ul class="nav-menu" >
-             <button id="menu-close-button" class="fas fa-times"></button>
-        
-            
-            <li class="nav-item">
-                <a href="#home" class="nav-link"><i class="fa-solid fa-house"></i> Home</a>
-            </li>
-            <li class="nav-item">
-                <a href="#about" class="nav-link"><i class="fa-solid fa-circle-info"></i> About</a>
-            </li>
-            <li class="nav-item">
-                <a href="#dashboard" class="nav-link"><i class="fa-solid fa-chart-line"></i> Dashboard</a>
-            </li>
-            <li class="nav-item">
-                <a href="#expense-manager" class="nav-link"><i class="fa-solid fa-wallet"></i> Expense Manager</a>
-            </li>
-            <li class="nav-item">
-                 <a href="#bank-sync" class="nav-link"><i class="fa-solid fa-building-columns"></i> Bank Sync</a>
-            </li>
-             <li class="nav-item" id="nav-btn">
-                 <a href="#log-in" class="nav-link" id="#button"><i class="fa-solid fa-right-to-bracket"></i> Log In</a>
-            </li>
-             <li class="nav-item" id="nav-btn">
-                 <a href="#sign-up" class="nav-link" id="#button" ><i class="fa-solid fa-user-plus"></i> Sign Up</a>
-            </li>
-            
-        </ul>
-        <button id="menu-open-button" class="fas fa-bars"></button>
-        
-         </nav>
+            <button id="menu-toggle-button" class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+                <i class="fa-solid fa-bars"></i>
+            </button>
 
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link"><i class="fa-solid fa-house"></i> Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link"><i class="fa-solid fa-circle-info"></i> About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#dashboard" class="nav-link"><i class="fa-solid fa-chart-line"></i> Dashboard</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#expense-manager" class="nav-link"><i class="fa-solid fa-wallet"></i> Expense Manager</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#bank-sync" class="nav-link"><i class="fa-solid fa-building-columns"></i> Bank Sync</a>
+                </li>
+                <li class="nav-item" id="nav-btn">
+                    <a href="#log-in" class="nav-link" id="login-button"><i class="fa-solid fa-right-to-bracket"></i> Log In</a>
+                </li>
+                <li class="nav-item" id="nav-btn">
+                    <a href="#sign-up" class="nav-link" id="signup-button"><i class="fa-solid fa-user-plus"></i> Sign Up</a>
+                </li>
+            </ul>
+        </nav>
     </header>
 
         <main>
@@ -83,6 +79,184 @@
                 </div>
             </div>
         </section>
+                <!--home page section-->
+        <section class="tools-section page-section home-section" id="home-tools">
+            <div class="section-content">
+                <h2 class="tools-title">Everything You Need</h2>
+                <p class="tools-subtitle">Powerful tools to take control of your financial life.</p>
+
+                <div class="tools-grid">
+                    <div class="tool-card">
+                        <i class="fa-solid fa-receipt"></i>
+                        <h3>Smart Expense Tracking</h3>
+                        <p>Automatically categorize and track every transaction across all your accounts in real-time.</p>
+                    </div>
+                    <div class="tool-card">
+                        <i class="fa-solid fa-lock"></i>
+                        <h3>Secure Bank Synchronization</h3>
+                        <p>Connect all your bank accounts securely with industry-leading encryption and security protocols.</p>
+                    </div>
+                    <div class="tool-card">
+                        <i class="fa-solid fa-chart-bar"></i>
+                        <h3>Intelligent Budgeting</h3>
+                        <p>Set category-wise budgets and get real-time alerts when you're approaching your limits.</p>
+                    </div>
+                    <div class="tool-card">
+                        <i class="fa-solid fa-lightbulb"></i>
+                        <h3>Actionable Insights</h3>
+                        <p>Visualize spending patterns and get personalized recommendations to save more and invest wisely.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="how-section page-section home-section" id="how-it-works">
+            <div class="section-content">
+                <h2 class="how-title">How It Works</h2>
+                <p class="how-subtitle">Get started in just 3 simple steps.</p>
+
+                <div class="how-grid">
+                    <div class="how-card">
+                        <div class="how-number">1</div>
+                        <h3>Create Account</h3>
+                        <p>Sign up in under 2 minutes</p>
+                    </div>
+                    <div class="how-card">
+                        <div class="how-number">2</div>
+                        <h3>Connect Banks</h3>
+                        <p>Link your accounts securely</p>
+                    </div>
+                    <div class="how-card">
+                        <div class="how-number">3</div>
+                        <h3>Start Tracking</h3>
+                        <p>See your finances visualized automatically</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="reviews-section page-section home-section" id="reviews">
+            <div class="section-content">
+                <h2 class="reviews-title">Reviews</h2>
+
+                <div class="reviews-grid">
+                    <div class="review-card">
+                        <div class="review-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p>"Monetize has completely transformed how I manage my business and personal finances. The bank sync feature is incredible!"</p>
+                        <div class="review-user">
+                            <div class="review-avatar">P</div>
+                            <div>
+                                <h4>Priya Sharma</h4>
+                                <span>Small Business Owner</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p>"Finally a finance app that understands all African banks and mobile money. I've saved KSh 1,500 more per month since using Monetize."</p>
+                        <div class="review-user">
+                            <div class="review-avatar">R</div>
+                            <div>
+                                <h4>Rahul Verma</h4>
+                                <span>Software Engineer</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <p>"The expense tracking is so intuitive. I love how it categorizes everything automatically. Highly recommended!"</p>
+                        <div class="review-user">
+                            <div class="review-avatar">A</div>
+                            <div>
+                                <h4>Anita Desai</h4>
+                                <span>Freelancer</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+         <!--about section-->
+        <section class="about-section page-section" id="about">
+            <div class="section-content">
+                <h2 class="about-title">Our Mission: <span>Financial Clarity</span> for Everyone</h2>
+                <p class="about-subtitle">We believe everyone deserves to understand and control their finances. Monetize was built to make financial management simple, intuitive, and even beautiful.</p>
+
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <i class="fa-solid fa-users"></i>
+                        <h3>50,000+</h3>
+                        <p>Active Users</p>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fa-solid fa-coins"></i>
+                        <h3>$100M+</h3>
+                        <p>Transactions Tracked</p>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fa-solid fa-building-columns"></i>
+                        <h3>15+</h3>
+                        <p>Bank Partners</p>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fa-solid fa-star"></i>
+                        <h3>4.8/5</h3>
+                        <p>User Rating</p>
+                    </div>
+                </div>
+
+                <h2 class="about-title spaced">Our Core Values</h2>
+                <div class="values-grid">
+                    <div class="value-card">
+                        <i class="fa-solid fa-eye"></i>
+                        <h3>Transparency</h3>
+                        <p>We believe in complete transparency in everything we do.</p>
+                    </div>
+                    <div class="value-card">
+                        <i class="fa-solid fa-shield-halved"></i>
+                        <h3>Security First</h3>
+                        <p>Your data is protected with bank-grade 256-bit encryption.</p>
+                    </div>
+                    <div class="value-card">
+                        <i class="fa-solid fa-user-shield"></i>
+                        <h3>User Privacy</h3>
+                        <p>We never sell or share your personal financial data.</p>
+                    </div>
+                    <div class="value-card">
+                        <i class="fa-solid fa-rocket"></i>
+                        <h3>Continuous Innovation</h3>
+                        <p>We constantly improve our platform based on user feedback.</p>
+                    </div>
+                </div>
+
+                <h2 class="about-title spaced">Why Choose Monetize?</h2>
+                <div class="choose-grid">
+                    <div class="choose-item"><i class="fa-solid fa-circle-check"></i><span>Supports all major Indian banks and UPI payment methods</span></div>
+                    <div class="choose-item"><i class="fa-solid fa-circle-check"></i><span>RBI-compliant data handling and privacy standards</span></div>
+                    <div class="choose-item"><i class="fa-solid fa-circle-check"></i><span>Free tier with no hidden charges or premium lock-ins</span></div>
+                    <div class="choose-item"><i class="fa-solid fa-circle-check"></i><span>Intelligent categorization powered by smart algorithms</span></div>
+                    <div class="choose-item"><i class="fa-solid fa-circle-check"></i><span>Real-time notifications and budget alerts</span></div>
+                    <div class="choose-item"><i class="fa-solid fa-circle-check"></i><span>Export your data anytime — you own it, not us</span></div>
+                </div>
+            </div>
+        </section>
+        <!--dashboard section-->
         <section class="dashboard-section page-section" id="dashboard">
             <div class="section-content dashboard-content">
                 <h2>Welcome back, <span class="guest-name">Guest</span></h2>
@@ -146,7 +320,7 @@
                             <rect x="340" y="160" width="60" height="100" fill="#4a6daf"></rect>
                             <rect x="460" y="110" width="60" height="150" fill="#4a6daf"></rect>
 
-                            <!-- expense bars (green), slightly offset -->
+                            <!-- expense bars (green) -->
                             <rect x="140" y="150" width="60" height="110" fill="#22c55e" opacity="0.95"></rect>
                             <rect x="260" y="130" width="60" height="130" fill="#22c55e" opacity="0.95"></rect>
                             <rect x="380" y="180" width="60" height="80" fill="#22c55e" opacity="0.95"></rect>
@@ -340,7 +514,373 @@
                 </div>
             </div>
         </section>
+    
+<!--expense manager section-->
+        <section class="expense-manager-section page-section" id="expense-manager">
+            <div class="section-content">
+                <h2 class="expense-title">Expense Manager</h2>
+                <p class="expense-subtitle">Track, categorize and analyze every expense</p>
 
+                 <div class="expense-metrics-grid">
+                </div>
+
+                <div class="add-expense-panel">
+                </div>
+
+                <div class="expenses-table-panel">
+                    <div class="expenses-toolbar">
+                        <div class="expenses-search">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <input type="text" id="expense-search" placeholder="Search expenses...">
+                        </div>
+                        <select id="expense-category-filter">
+                            <option value="">All Categories</option>
+                            <option value="food">Food & Dining</option>
+                            <option value="transport">Transportation</option>
+                            <option value="entertainment">Entertainment</option>
+                            <option value="shopping">Shopping</option>
+                            <option value="bills">Bills & Utilities</option>
+                            <option value="health">Health & Fitness</option>
+                            <option value="education">Education</option>
+                            <option value="travel">Travel</option>
+                            <option value="other">Other</option>
+                        </select>
+                        <button class="export-expenses-btn">
+                            <i class="fa-solid fa-download"></i> Export
+                        </button>
+                    </div>
+
+                    <div class="expenses-table-wrap">
+                        <table class="expenses-table">
+                            <thead>
+                                <tr>
+                                    <th>Date</th>
+                                    <th>Description</th>
+                                    <th>Category</th>
+                                    <th>Method</th>
+                                    <th>Amount</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>14 Sept 2024</td>
+                                    <td>Grocery Store</td>
+                                    <td>Food & Dining</td>
+                                    <td>UPI</td>
+                                    <td>-Ksh 2,450</td>
+                                    <td>
+                                        <button class="row-action edit-action"><i class="fa-solid fa-pen"></i></button>
+                                        <button class="row-action delete-action"><i class="fa-solid fa-trash"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>13 Sept 2024</td>
+                                    <td>Uber Ride</td>
+                                    <td>Transportation</td>
+                                    <td>Credit Card</td>
+                                    <td>-Ksh 350</td>
+                                    <td>
+                                        <button class="row-action edit-action"><i class="fa-solid fa-pen"></i></button>
+                                        <button class="row-action delete-action"><i class="fa-solid fa-trash"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>09 Sept 2024</td>
+                                    <td>Netflix Subscription</td>
+                                    <td>Entertainment</td>
+                                    <td>Debit Card</td>
+                                    <td>-Ksh 649</td>
+                                    <td>
+                                        <button class="row-action edit-action"><i class="fa-solid fa-pen"></i></button>
+                                        <button class="row-action delete-action"><i class="fa-solid fa-trash"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>04 Sept 2024</td>
+                                    <td>Electricity Bill</td>
+                                    <td>Bills & Utilities</td>
+                                    <td>Net Banking</td>
+                                    <td>-Ksh 1,850</td>
+                                    <td>
+                                        <button class="row-action edit-action"><i class="fa-solid fa-pen"></i></button>
+                                        <button class="row-action delete-action"><i class="fa-solid fa-trash"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>02 Sept 2024</td>
+                                    <td>Restaurant Dinner</td>
+                                    <td>Food & Dining</td>
+                                    <td>UPI</td>
+                                    <td>-Ksh 1,200</td>
+                                    <td>
+                                        <button class="row-action edit-action"><i class="fa-solid fa-pen"></i></button>
+                                        <button class="row-action delete-action"><i class="fa-solid fa-trash"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>27 Aug 2024</td>
+                                    <td>New Shoes</td>
+                                    <td>Shopping</td>
+                                    <td>Credit Card</td>
+                                    <td>-Ksh 2,500</td>
+                                    <td>
+                                        <button class="row-action edit-action"><i class="fa-solid fa-pen"></i></button>
+                                        <button class="row-action delete-action"><i class="fa-solid fa-trash"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>24 Aug 2024</td>
+                                    <td>Gym Membership</td>
+                                    <td>Health & Fitness</td>
+                                    <td>UPI</td>
+                                    <td>-Ksh 1,000</td>
+                                    <td>
+                                        <button class="row-action edit-action"><i class="fa-solid fa-pen"></i></button>
+                                        <button class="row-action delete-action"><i class="fa-solid fa-trash"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>19 Aug 2024</td>
+                                    <td>Petrol</td>
+                                    <td>Transportation</td>
+                                    <td>Cash</td>
+                                    <td>-Ksh 800</td>
+                                    <td>
+                                        <button class="row-action edit-action"><i class="fa-solid fa-pen"></i></button>
+                                        <button class="row-action delete-action"><i class="fa-solid fa-trash"></i></button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="expense-charts-grid">
+                    <div class="expense-chart-card">
+                        <h3>Category Breakdown</h3>
+                        <div class="donut-chart-container">
+                            <svg viewBox="0 0 200 200" class="donut-chart">
+                                <circle cx="100" cy="100" r="60" fill="none" stroke="#3b82f6" stroke-width="20" stroke-dasharray="113.1 376.99" stroke-dashoffset="0" transform="rotate(-90 100 100)"></circle>
+                                <circle cx="100" cy="100" r="60" fill="none" stroke="#fbbf24" stroke-width="20" stroke-dasharray="75.4 376.99" stroke-dashoffset="-113.1" transform="rotate(-90 100 100)"></circle>
+                                <circle cx="100" cy="100" r="60" fill="none" stroke="#10b981" stroke-width="20" stroke-dasharray="56.55 376.99" stroke-dashoffset="-188.5" transform="rotate(-90 100 100)"></circle>
+                                <circle cx="100" cy="100" r="60" fill="none" stroke="#ec4899" stroke-width="20" stroke-dasharray="67.86 376.99" stroke-dashoffset="-245.05" transform="rotate(-90 100 100)"></circle>
+                                <circle cx="100" cy="100" r="60" fill="none" stroke="#a855f7" stroke-width="20" stroke-dasharray="45.24 376.99" stroke-dashoffset="-312.91" transform="rotate(-90 100 100)"></circle>
+                                <circle cx="100" cy="100" r="60" fill="none" stroke="#f97316" stroke-width="20" stroke-dasharray="18.85 376.99" stroke-dashoffset="-358.15" transform="rotate(-90 100 100)"></circle>
+                                <circle cx="100" cy="100" r="35" fill="#ffffff"></circle>
+                                <text x="100" y="105" text-anchor="middle" font-size="16" font-weight="bold" fill="#0f172a">Ksh 6,349</text>
+                                <text x="100" y="125" text-anchor="middle" font-size="12" fill="#64748b">Total</text>
+                            </svg>
+                        </div>
+                        <div class="chart-legend">
+                            <div class="legend-item">
+                                <span class="legend-color" style="background-color: #3b82f6;"></span>
+                                <span class="legend-label">Food & Dining</span>
+                                <span class="legend-value">30%</span>
+                            </div>
+                            <div class="legend-item">
+                                <span class="legend-color" style="background-color: #fbbf24;"></span>
+                                <span class="legend-label">Transportation</span>
+                                <span class="legend-value">20%</span>
+                            </div>
+                            <div class="legend-item">
+                                <span class="legend-color" style="background-color: #10b981;"></span>
+                                <span class="legend-label">Entertainment</span>
+                                <span class="legend-value">15%</span>
+                            </div>
+                            <div class="legend-item">
+                                <span class="legend-color" style="background-color: #ec4899;"></span>
+                                <span class="legend-label">Shopping</span>
+                                <span class="legend-value">18%</span>
+                            </div>
+                            <div class="legend-item">
+                                <span class="legend-color" style="background-color: #a855f7;"></span>
+                                <span class="legend-label">Bills & Utilities</span>
+                                <span class="legend-value">12%</span>
+                            </div>
+                            <div class="legend-item">
+                                <span class="legend-color" style="background-color: #f97316;"></span>
+                                <span class="legend-label">Health & Fitness</span>
+                                <span class="legend-value">5%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="expense-trend-card">
+                        <h3>Spending Trend</h3>
+                        <div class="trend-chart-container">
+                            <svg viewBox="0 0 800 300" class="trend-chart" preserveAspectRatio="xMidYMid meet">
+                                <line x1="60" y1="50" x2="760" y2="50" stroke="#e5e7eb" stroke-width="1" stroke-dasharray="5,5"/>
+                                <line x1="60" y1="100" x2="760" y2="100" stroke="#e5e7eb" stroke-width="1" stroke-dasharray="5,5"/>
+                                <line x1="60" y1="150" x2="760" y2="150" stroke="#e5e7eb" stroke-width="1" stroke-dasharray="5,5"/>
+                                <line x1="60" y1="200" x2="760" y2="200" stroke="#e5e7eb" stroke-width="1" stroke-dasharray="5,5"/>
+                                <line x1="60" y1="250" x2="760" y2="250" stroke="#e5e7eb" stroke-width="1" stroke-dasharray="5,5"/>
+                                <line x1="60" y1="30" x2="60" y2="260" stroke="#cbd5e1" stroke-width="2"/>
+                                <line x1="60" y1="260" x2="780" y2="260" stroke="#cbd5e1" stroke-width="2"/>
+                                <text x="50" y="265" font-size="12" fill="#64748b" text-anchor="end">Ksh 0</text>
+                                <text x="50" y="215" font-size="12" fill="#64748b" text-anchor="end">Ksh 500</text>
+                                <text x="50" y="165" font-size="12" fill="#64748b" text-anchor="end">Ksh 1,000</text>
+                                <text x="50" y="115" font-size="12" fill="#64748b" text-anchor="end">Ksh 1,500</text>
+                                <text x="50" y="65" font-size="12" fill="#64748b" text-anchor="end">Ksh 2,000</text>
+                                <polyline points="60,200 130,180 200,160 270,190 340,140 410,170 480,110 550,130 620,90 690,120 760,80" fill="none" stroke="#2563eb" stroke-width="3" stroke-linejoin="round"/>
+                                <polygon points="60,200 130,180 200,160 270,190 340,140 410,170 480,110 550,130 620,90 690,120 760,80 760,260 60,260" fill="#2563eb" opacity="0.1"/>
+                                <circle cx="60" cy="200" r="4" fill="#2563eb"/>
+                                <circle cx="130" cy="180" r="4" fill="#2563eb"/>
+                                <circle cx="200" cy="160" r="4" fill="#2563eb"/>
+                                <circle cx="270" cy="190" r="4" fill="#2563eb"/>
+                                <circle cx="340" cy="140" r="4" fill="#2563eb"/>
+                                <circle cx="410" cy="170" r="4" fill="#2563eb"/>
+                                <circle cx="480" cy="110" r="4" fill="#2563eb"/>
+                                <circle cx="550" cy="130" r="4" fill="#2563eb"/>
+                                <circle cx="620" cy="90" r="4" fill="#2563eb"/>
+                                <circle cx="690" cy="120" r="4" fill="#2563eb"/>
+                                <circle cx="760" cy="80" r="4" fill="#2563eb"/>
+                                <text x="60" y="285" font-size="11" fill="#64748b" text-anchor="middle">Aug 20</text>
+                                <text x="130" y="285" font-size="11" fill="#64748b" text-anchor="middle">Aug 24</text>
+                                <text x="200" y="285" font-size="11" fill="#64748b" text-anchor="middle">Aug 27</text>
+                                <text x="270" y="285" font-size="11" fill="#64748b" text-anchor="middle">Sep 2</text>
+                                <text x="340" y="285" font-size="11" fill="#64748b" text-anchor="middle">Sep 4</text>
+                                <text x="410" y="285" font-size="11" fill="#64748b" text-anchor="middle">Sep 9</text>
+                                <text x="480" y="285" font-size="11" fill="#64748b" text-anchor="middle">Sep 13</text>
+                                <text x="550" y="285" font-size="11" fill="#64748b" text-anchor="middle">Sep 19</text>
+                                <text x="620" y="285" font-size="11" fill="#64748b" text-anchor="middle">Sep 27</text>
+                                <text x="690" y="285" font-size="11" fill="#64748b" text-anchor="middle">Oct 2</text>
+                                <text x="760" y="285" font-size="11" fill="#64748b" text-anchor="middle">Oct 14</text>
+                                <rect x="580" y="40" width="12" height="12" fill="#2563eb"/>
+                                <text x="600" y="50" font-size="12" fill="#64748b">Daily Spending</text>
+                            </svg>
+                        </div>
+                        <div class="trend-stats">
+                            <div class="trend-stat">
+                                <span class="stat-label">Average Daily Spend</span>
+                                <span class="stat-value">Ksh 635</span>
+                            </div>
+                            <div class="trend-stat">
+                                <span class="stat-label">Highest Spend</span>
+                                <span class="stat-value">Ksh 2,450</span>
+                            </div>
+                            <div class="trend-stat">
+                                <span class="stat-label">Lowest Spend</span>
+                                <span class="stat-value">KSh 245</span>
+                            </div>
+                            <div class="trend-stat">
+                                <span class="stat-label">Total Period</span>
+                                <span class="stat-value">55 Days</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+
+                <div class="budget-overview-card">
+                    <h3>Budget Overview</h3>
+                    <div class="budget-grid">
+                        <div class="budget-item">
+                            <div class="budget-item-header">
+                                <div class="budget-category">
+                                    <span class="budget-dot" style="background-color: #3b82f6;"></span>
+                                    <span class="budget-category-name">Food & Dining</span>
+                                </div>
+                                <span class="budget-percentage">46%</span>
+                            </div>
+                            <div class="budget-progress-bar">
+                                <div class="budget-progress-fill" style="width: 46%; background-color: #3b82f6;"></div>
+                            </div>
+                            <div class="budget-amounts">
+                                <span class="budget-spent">Ksh 3,650 spent</span>
+                                <span class="budget-limit">Ksh 8,000 limit</span>
+                            </div>
+                        </div>
+
+                        <div class="budget-item">
+                            <div class="budget-item-header">
+                                <div class="budget-category">
+                                    <span class="budget-dot" style="background-color: #fbbf24;"></span>
+                                    <span class="budget-category-name">Transportation</span>
+                                </div>
+                                <span class="budget-percentage">38%</span>
+                            </div>
+                            <div class="budget-progress-bar">
+                                <div class="budget-progress-fill" style="width: 38%; background-color: #fbbf24;"></div>
+                            </div>
+                            <div class="budget-amounts">
+                                <span class="budget-spent">Ksh 1,150 spent</span>
+                                <span class="budget-limit">Ksh 3,000 limit</span>
+                            </div>
+                        </div>
+
+                        <div class="budget-item">
+                            <div class="budget-item-header">
+                                <div class="budget-category">
+                                    <span class="budget-dot" style="background-color: #10b981;"></span>
+                                    <span class="budget-category-name">Entertainment</span>
+                                </div>
+                                <span class="budget-percentage">32%</span>
+                            </div>
+                            <div class="budget-progress-bar">
+                                <div class="budget-progress-fill" style="width: 32%; background-color: #10b981;"></div>
+                            </div>
+                            <div class="budget-amounts">
+                                <span class="budget-spent">Ksh 649 spent</span>
+                                <span class="budget-limit">Ksh 2,000 limit</span>
+                            </div>
+                        </div>
+
+                        <div class="budget-item">
+                            <div class="budget-item-header">
+                                <div class="budget-category">
+                                    <span class="budget-dot" style="background-color: #ec4899;"></span>
+                                    <span class="budget-category-name">Shopping</span>
+                                </div>
+                                <span class="budget-percentage">50%</span>
+                            </div>
+                            <div class="budget-progress-bar">
+                                <div class="budget-progress-fill" style="width: 50%; background-color: #ec4899;"></div>
+                            </div>
+                            <div class="budget-amounts">
+                                <span class="budget-spent">Ksh 2,500 spent</span>
+                                <span class="budget-limit">Ksh 5,000 limit</span>
+                            </div>
+                        </div>
+
+                        <div class="budget-item">
+                            <div class="budget-item-header">
+                                <div class="budget-category">
+                                    <span class="budget-dot" style="background-color: #a855f7;"></span>
+                                    <span class="budget-category-name">Bills & Utilities</span>
+                                </div>
+                                <span class="budget-percentage">26%</span>
+                            </div>
+                            <div class="budget-progress-bar">
+                                <div class="budget-progress-fill" style="width: 26%; background-color: #a855f7;"></div>
+                            </div>
+                            <div class="budget-amounts">
+                                <span class="budget-spent">Ksh 1,850 spent</span>
+                                <span class="budget-limit">Ksh 7,000 limit</span>
+                            </div>
+                        </div>
+
+                        <div class="budget-item">
+                            <div class="budget-item-header">
+                                <div class="budget-category">
+                                    <span class="budget-dot" style="background-color: #f97316;"></span>
+                                    <span class="budget-category-name">Health & Fitness</span>
+                                </div>
+                                <span class="budget-percentage">50%</span>
+                            </div>
+                            <div class="budget-progress-bar">
+                                <div class="budget-progress-fill" style="width: 50%; background-color: #f97316;"></div>
+                            </div>
+                            <div class="budget-amounts">
+                                <span class="budget-spent">Ksh 1,000 spent</span>
+                                <span class="budget-limit">Ksh 2,000 limit</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+         <!--bank sync section-->
         <section class="bank-sync-section page-section" id="bank-sync">
             <div class="section-content">
                 <h2 class="bank-sync-title">Connect Your Bank Accounts</h2>
@@ -468,295 +1008,6 @@
                 </div>
             </div>
         </section>
-
-        <section class="expense-manager-section page-section" id="expense-manager">
-            <div class="section-content">
-                <h2 class="expense-title">Expense Manager</h2>
-                <p class="expense-subtitle">Track, categorize and analyze every expense</p>
-
-                <div class="expense-metrics-grid">
-                    <div class="expense-metric-card">
-                        <div class="metric-top">
-                            <h4>Current Balance</h4>
-                            <i class="fa-solid fa-wallet"></i>
-                        </div>
-                        <div class="metric-value">KSh 0</div>
-                        <div class="metric-change positive">
-                            <i class="fa-solid fa-arrow-trend-up"></i>
-                            5% from last month
-                        </div>
-                    </div>
-
-                    <div class="expense-metric-card">
-                        <div class="metric-top">
-                            <h4>This Month</h4>
-                            <i class="fa-solid fa-chart-column"></i>
-                        </div>
-                        <div class="metric-value">KSh 650</div>
-                        <div class="metric-change negative">
-                            <i class="fa-solid fa-arrow-trend-down"></i>
-                            22% of budget
-                        </div>
-                    </div>
-
-                    <div class="expense-metric-card">
-                        <div class="metric-top">
-                            <h4>Remaining</h4>
-                            <i class="fa-solid fa-hourglass-end"></i>
-                        </div>
-                        <div class="metric-value">KSh 2,250</div>
-                        <div class="metric-change">
-                            12 days left
-                        </div>
-                    </div>
-
-                    <div class="expense-metric-card">
-                        <div class="metric-top">
-                            <h4>Savings Rate</h4>
-                            <i class="fa-solid fa-piggy-bank"></i>
-                        </div>
-                        <div class="metric-value">91%</div>
-                        <div class="metric-change positive">
-                            <i class="fa-solid fa-arrow-trend-up"></i>
-                            3% vs last month
-                        </div>
-                    </div>
-                </div>
-
-                <div class="add-expense-panel">
-                    <h3>Add New Expense</h3>
-                    <form class="expense-form">
-                        <div class="form-row">
-                            <div class="form-group">
-                                <input type="text" placeholder="What did you spend on?" required>
-                            </div>
-                            <div class="form-group">
-                                <input type="number" placeholder="Amount (KSh)" min="0" step="1" required>
-                            </div>
-                        </div>
-
-                        <div class="form-row">
-                            <div class="form-group">
-                                <select required>
-                                    <option value="">Food & Dining</option>
-                                    <option value="">Food & Dining</option>
-                                    <option value="">Shopping</option>
-                                    <option value="">Entertainment</option>
-                                    <option value="">Transportation</option>
-                                    <option value="">Bills & Utility</option>
-                                    <option value="">Health & Fitness</option>
-                                    <option value="">Travel</option>
-                                    <option value="">Education</option>
-                                    <option value="">Other</option>
-                                </select>
-                                <i class="fa-solid fa-chevron-down"></i>
-                            </div>
-                            <div class="form-group">
-                                <select required>
-                                    <option value="">Cash</option>
-                                    <option value="">Credit Card</option>
-                                    <option value="">Debit Card</option>
-                                    <option value="">UPI</option>
-                                    <option value="">Netbanking</option>
-                                    <option value="">Bank Transfer</option>
-                                </select>
-                                <i class="fa-solid fa-chevron-down"></i>
-                            </div>
-                        </div>
-
-                        <div class="form-row">
-                            <div class="form-group date-group">
-                                <i class="fa-solid fa-calendar"></i>
-                                <input type="date" required>
-                            </div>
-                            <div class="form-group">
-                                <input type="text" placeholder="Notes (optional)">
-                            </div>
-                        </div>
-
-                        <button type="submit" class="add-expense-btn">
-                            <i class="fa-solid fa-plus"></i> Add Expense
-                        </button>
-                    </form>
-                </div>
-            </div>
-        </section>
-
-        <section class="tools-section page-section home-section" id="home-tools">
-            <div class="section-content">
-                <h2 class="tools-title">Everything You Need</h2>
-                <p class="tools-subtitle">Powerful tools to take control of your financial life.</p>
-
-                <div class="tools-grid">
-                    <div class="tool-card">
-                        <i class="fa-solid fa-receipt"></i>
-                        <h3>Smart Expense Tracking</h3>
-                        <p>Automatically categorize and track every transaction across all your accounts in real-time.</p>
-                    </div>
-                    <div class="tool-card">
-                        <i class="fa-solid fa-lock"></i>
-                        <h3>Secure Bank Synchronization</h3>
-                        <p>Connect all your bank accounts securely with industry-leading encryption and security protocols.</p>
-                    </div>
-                    <div class="tool-card">
-                        <i class="fa-solid fa-chart-bar"></i>
-                        <h3>Intelligent Budgeting</h3>
-                        <p>Set category-wise budgets and get real-time alerts when you're approaching your limits.</p>
-                    </div>
-                    <div class="tool-card">
-                        <i class="fa-solid fa-lightbulb"></i>
-                        <h3>Actionable Insights</h3>
-                        <p>Visualize spending patterns and get personalized recommendations to save more and invest wisely.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="how-section page-section home-section" id="how-it-works">
-            <div class="section-content">
-                <h2 class="how-title">How It Works</h2>
-                <p class="how-subtitle">Get started in just 3 simple steps.</p>
-
-                <div class="how-grid">
-                    <div class="how-card">
-                        <div class="how-number">1</div>
-                        <h3>Create Account</h3>
-                        <p>Sign up in under 2 minutes</p>
-                    </div>
-                    <div class="how-card">
-                        <div class="how-number">2</div>
-                        <h3>Connect Banks</h3>
-                        <p>Link your accounts securely</p>
-                    </div>
-                    <div class="how-card">
-                        <div class="how-number">3</div>
-                        <h3>Start Tracking</h3>
-                        <p>See your finances visualized automatically</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="reviews-section page-section home-section" id="reviews">
-            <div class="section-content">
-                <h2 class="reviews-title">Reviews</h2>
-
-                <div class="reviews-grid">
-                    <div class="review-card">
-                        <div class="review-stars">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                        </div>
-                        <p>"Monetize has completely transformed how I manage my business and personal finances. The bank sync feature is incredible!"</p>
-                        <div class="review-user">
-                            <div class="review-avatar">P</div>
-                            <div>
-                                <h4>Priya Sharma</h4>
-                                <span>Small Business Owner</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="review-card">
-                        <div class="review-stars">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                        </div>
-                        <p>"Finally a finance app that understands all African banks and mobile money. I've saved KSh 1,500 more per month since using Monetize."</p>
-                        <div class="review-user">
-                            <div class="review-avatar">R</div>
-                            <div>
-                                <h4>Rahul Verma</h4>
-                                <span>Software Engineer</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="review-card">
-                        <div class="review-stars">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                        </div>
-                        <p>"The expense tracking is so intuitive. I love how it categorizes everything automatically. Highly recommended!"</p>
-                        <div class="review-user">
-                            <div class="review-avatar">A</div>
-                            <div>
-                                <h4>Anita Desai</h4>
-                                <span>Freelancer</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="about-section page-section" id="about">
-            <div class="section-content">
-                <h2 class="about-title">Our Mission: <span>Financial Clarity</span> for Everyone</h2>
-                <p class="about-subtitle">We believe everyone deserves to understand and control their finances. Monetize was built to make financial management simple, intuitive, and even beautiful.</p>
-
-                <div class="stats-grid">
-                    <div class="stat-card">
-                        <i class="fa-solid fa-users"></i>
-                        <h3>50,000+</h3>
-                        <p>Active Users</p>
-                    </div>
-                    <div class="stat-card">
-                        <i class="fa-solid fa-coins"></i>
-                        <h3>$100M+</h3>
-                        <p>Transactions Tracked</p>
-                    </div>
-                    <div class="stat-card">
-                        <i class="fa-solid fa-building-columns"></i>
-                        <h3>15+</h3>
-                        <p>Bank Partners</p>
-                    </div>
-                    <div class="stat-card">
-                        <i class="fa-solid fa-star"></i>
-                        <h3>4.8/5</h3>
-                        <p>User Rating</p>
-                    </div>
-                </div>
-
-                <h2 class="about-title spaced">Our Core Values</h2>
-                <div class="values-grid">
-                    <div class="value-card">
-                        <i class="fa-solid fa-eye"></i>
-                        <h3>Transparency</h3>
-                        <p>We believe in complete transparency in everything we do.</p>
-                    </div>
-                    <div class="value-card">
-                        <i class="fa-solid fa-shield-halved"></i>
-                        <h3>Security First</h3>
-                        <p>Your data is protected with bank-grade 256-bit encryption.</p>
-                    </div>
-                    <div class="value-card">
-                        <i class="fa-solid fa-user-shield"></i>
-                        <h3>User Privacy</h3>
-                        <p>We never sell or share your personal financial data.</p>
-                    </div>
-                    <div class="value-card">
-                        <i class="fa-solid fa-rocket"></i>
-                        <h3>Continuous Innovation</h3>
-                        <p>We constantly improve our platform based on user feedback.</p>
-                    </div>
-                </div>
-
-                <h2 class="about-title spaced">Why Choose Monetize?</h2>
-                <div class="choose-grid">
-                    <div class="choose-item"><i class="fa-solid fa-circle-check"></i><span>Supports all major Indian banks and UPI payment methods</span></div>
-                    <div class="choose-item"><i class="fa-solid fa-circle-check"></i><span>RBI-compliant data handling and privacy standards</span></div>
-                    <div class="choose-item"><i class="fa-solid fa-circle-check"></i><span>Free tier with no hidden charges or premium lock-ins</span></div>
-                    <div class="choose-item"><i class="fa-solid fa-circle-check"></i><span>Intelligent categorization powered by smart algorithms</span></div>
-                    <div class="choose-item"><i class="fa-solid fa-circle-check"></i><span>Real-time notifications and budget alerts</span></div>
-                    <div class="choose-item"><i class="fa-solid fa-circle-check"></i><span>Export your data anytime — you own it, not us</span></div>
-                </div>
-            </div>
-        </section>
         <!--login section -->
         <section class="login-section page-section" id="log-in">
             <div class="section-content">
@@ -855,6 +1106,7 @@
                 </div>
             </div>
         </section>
+        <!--footer section-->
         <footer class="site-footer">
             <div class="section-content footer-grid">
                 <div class="footer-col">

@@ -176,4 +176,34 @@ window.addEventListener("load", () => {
       signupSection?.classList.remove("active");
     }
   });
+
+  const menuToggleButton = document.getElementById("menu-toggle-button");
+  const navMenu = document.getElementById("nav-menu");
+
+  if (menuToggleButton && navMenu) {
+    menuToggleButton.addEventListener("click", () => {
+      navMenu.classList.toggle("active");
+      const isOpen = navMenu.classList.contains("active");
+      menuToggleButton.setAttribute("aria-expanded", String(isOpen));
+
+      const icon = menuToggleButton.querySelector("i");
+      if (icon) {
+        icon.classList.toggle("fa-bars", !isOpen);
+        icon.classList.toggle("fa-xmark", isOpen);
+      }
+    });
+
+    // optional: close after clicking any nav link on mobile
+    navMenu.querySelectorAll(".nav-link").forEach((link) => {
+      link.addEventListener("click", () => {
+        navMenu.classList.remove("active");
+        menuToggleButton.setAttribute("aria-expanded", "false");
+        const icon = menuToggleButton.querySelector("i");
+        if (icon) {
+          icon.classList.add("fa-bars");
+          icon.classList.remove("fa-xmark");
+        }
+      });
+    });
+  }
 });
